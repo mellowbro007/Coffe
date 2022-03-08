@@ -1,3 +1,0 @@
-<template>
-  <Milchkaffe />
-</template>

@@ -1,0 +1,16 @@
+
+Cafe Creme:         "https://www.cremundo.de/wp-content/uploads/2018/01/nespresso-erfolgsstory.jpg"
+
+Espresso:           "https://image.brigitte.de/10115348/t/sn/v8/w1440/r1.7778/-/espresso-eckig.jpg" 
+
+Cappuccino:         "https://st3.depositphotos.com/1175884/i/600/depositphotos_159126456-stock-photo-cappuccino-coffee-on-dark-background.jpg"
+
+Easy Clean:         "https://cdn-vergleich.bild.de/img/sites/4/kaffeemaschine-reinigen-671x288.jpeg"
+
+Hot_Water:          "https://whitewaternow.com/wp-content/uploads/2019/12/hot-water-pouring-cup.jpg"
+
+Latte_Macchiato:    "https://www.cafemigo.de/wp-content/uploads/AdobeStock-239331032-Pixel-Shot-780x520.jpeg"
+
+Milchschaum:        "https://www.roastmarket.de/magazin/wp-content/uploads/2016/07/milchschaum-in-wei%C3%9Fer-tasse-660x455.jpeg"
+
+Warme Milch:        "https://amp.infranken.de/storage/image/9/1/0/6/3716019_amp-large_1xksWs_5vR6mm.jpg"
