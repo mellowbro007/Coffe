@@ -1,33 +1,29 @@
 <template>
   <div class="Hero container">
     <div class="text-container">
-      <h1 class="header">Caffe Creme</h1>
+      <h1 class="header"> {{$route.query.cofetype}}</h1>
     </div>
     <img
       class="image"
       src="https://www.cremundo.de/wp-content/uploads/2018/01/nespresso-erfolgsstory.jpg"
-      alt="Cafe Creme konnte nicht geladen werden"
+      alt= "Cafe Creme konnte nicht geladen werden"
     />
 
-    <div class="stepper">
-      <v-stepper alt-labels>
-        <v-stepper-header>
-          <v-stepper-step step="1"> Step 1 </v-stepper-step>
+    <v-stepper v-model="position" vertical>
+      <template v-for="(item, index) in $route.query.steps">
 
-          <v-divider></v-divider>
+              <v-stepper-step :complete="position > index + 1" :step="index + 1">
+                <h2>
+                  {{labels[index +1]}}
+                </h2>
+              </v-stepper-step>
 
-          <v-stepper-step step="2"> Step 2 </v-stepper-step>
+              <v-stepper-content :step="index+1">
+                <router-view></router-view>
+              </v-stepper-content>
+      </template>
+    </v-stepper>
 
-          <v-divider></v-divider>
-
-          <v-stepper-step step="3"> Step 3 </v-stepper-step>
-
-          <v-divider></v-divider>
-
-          <v-stepper-step step="3"> Finish </v-stepper-step>
-        </v-stepper-header>
-      </v-stepper>
-    </div>
   </div>
 </template>
 
@@ -35,9 +31,15 @@
 export default {
   data() {
     return {
-      e1: 1,
+      position: 1,
+      labels: {
+        1:'start', 2: 'start2', 3:'start3', 4:'ende'
+      }
     };
   },
+  created() {
+    this.position=this.$route.query.step
+  }
 };
 </script>
 
