@@ -29,7 +29,7 @@ const coffee_types = {
 
   },
   'Easy_Clean': {
-    label: 'Reinigungsprogramm',
+    label: 'Reinigung',
     steps:  ['Ausgangsdüse spülen', 'Dampfreinigung der Ausgangsdüse', 'Reinigung der Milchschaumdüse']
   },
   'Milchschaum': {
@@ -53,23 +53,35 @@ const coffee_types = {
     steps: ['Einlass Kaffeebohnen', 'Mahlprozess', 'Mahlwerkausblasen', 'Mechanik Brüheinheit', 'Tampen', 'Präinfusion Brühprozess', 'Brühprozess', 'Auswurf Kaffeepuck']
   }
 }
+
 export default {
   data() {
     return {
-      position: parseInt(this.$route.query.position),
-      coffeeType: this.$route.query.coffeetype
+      position: 1,
+      coffeeType: "Stille"
     };
   },
   computed: {
     steps () {
+      if (!this.coffeeType) return
       return coffee_types[this.coffeeType].steps
     },
     coffee () {
-      console.log(this.coffeeType)
+      if (!this.coffeeType) return 'Stille'
+      console.log(this.coffeeType, coffee_types[this.coffeeType])
       return coffee_types[this.coffeeType].label
     }
+  },
+  created () {
+    let socket = new WebSocket("ws://127.0.0.1:7777");
+
+    socket.onmessage = (event) => {
+      const data = JSON.parse(event.data)
+      this.coffeeType = data.coffee_type
+      this.position = data.position
+    }
   }
-};
+}
 </script>
 
 <style scoped lang="sass">
