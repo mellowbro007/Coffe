@@ -12,7 +12,7 @@
     <v-stepper v-model="position" vertical>
       <template v-for="(item, index) in $route.query.steps">
 
-              <v-stepper-step :complete="position > index + 1" :step="index + 1">
+              <v-stepper-step :step="index" :complete="position > index + 1" >
                 <h2>
                   {{labels[index +1]}}
                 </h2>
@@ -21,6 +21,7 @@
               <v-stepper-content :step="index+1">
                 <router-view></router-view>
               </v-stepper-content>
+
       </template>
     </v-stepper>
 

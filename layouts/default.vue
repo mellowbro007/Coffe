@@ -1,19 +1,20 @@
+
 <template>
   <v-app dark>
     <v-main>
       <v-container>
-        <Cafe_Creme />
+        <All_coffee />
       </v-container>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import Cafe_Creme from "../components/Cafe_Creme.vue";
+import All_coffee from "../components/all_coffee.vue";
 export default {
   data() {
     return {};
   },
-  components: { Cafe_Creme },
+  components: { All_coffee },
 };
 </script>
