@@ -1,8 +1,8 @@
 <template lang="pug">
-  .container
+  .container(:class="{'single': coffee === 'Stille'}")
     h1.header {{ coffee }}
 
-    v-stepper.item(v-model="position" vertical)
+    v-stepper.item(v-model="position" vertical v-if="coffee !== 'Stille'")
       template(v-for="(step, index) in steps")
         v-stepper-step(
           :key="`${step}-step`"
@@ -16,6 +16,9 @@
 
 <script>
 const coffee_types = {
+  'Stille': {
+    label: 'Stille'
+  },
   'Hot_Water': {
     label: 'Heißes Wasser',
     steps: ['Hochdruckpumpe', 'Wasserausgabe']
@@ -84,6 +87,8 @@ export default {
   display: flex
   align-items: center
   justify-content: space-between
+  &.single
+    justify-content: center
 
   .item
     width: 50%
