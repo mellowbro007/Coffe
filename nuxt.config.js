@@ -2,9 +2,10 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  ssr: false, // Disable Server Side rendering
   head: {
-    titleTemplate: '%s - Kaffe_app',
-    title: 'Kaffe_app',
+    titleTemplate: '%s - Kaffee App',
+    title: 'Kaffee App',
     htmlAttrs: {
       lang: 'en'
     },
