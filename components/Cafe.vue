@@ -95,6 +95,7 @@ export default {
   font-size: 5rem
 
 .container
+  max-width: 95vw
   height: 100vh
   display: flex
   align-items: center
