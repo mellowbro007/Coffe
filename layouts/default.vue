@@ -1,19 +1,15 @@
-<template>
-  <v-app dark>
-    <v-main>
-      <v-container>
-        <Cafe_Creme />
-      </v-container>
-    </v-main>
-  </v-app>
+<template lang="pug">
+  v-app(dark)
+    v-main
+      Cafe
 </template>
 
 <script>
-import Cafe_Creme from "../components/Cafe_Creme.vue";
+import Cafe from "../components/Cafe.vue";
 export default {
   data() {
     return {};
   },
-  components: { Cafe_Creme },
+  components: { Cafe },
 };
 </script>
