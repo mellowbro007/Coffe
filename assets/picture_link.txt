@@ -1,16 +1,20 @@
 
-Cafe Creme:         "https://www.cremundo.de/wp-content/uploads/2018/01/nespresso-erfolgsstory.jpg"
+Espresso:         "https://www.dongeorge.ch/wp-content/uploads/2021/09/1598171_beverage_cafe_caffeine_coffee_cup_icon.png"
 
-Espresso:           "https://image.brigitte.de/10115348/t/sn/v8/w1440/r1.7778/-/espresso-eckig.jpg" 
+Caffee_Creme:     "https://icons.veryicon.com/png/o/miscellaneous/foods-life/espresso-cup.png" 
 
-Cappuccino:         "https://st3.depositphotos.com/1175884/i/600/depositphotos_159126456-stock-photo-cappuccino-coffee-on-dark-background.jpg"
+Cappuccino:       "https://cdn-icons-png.flaticon.com/512/468/468641.png"
 
-Easy Clean:         "https://cdn-vergleich.bild.de/img/sites/4/kaffeemaschine-reinigen-671x288.jpeg"
+Latte_Macchiato:  "https://static.thenounproject.com/png/2776526-200.png"
 
-Hot_Water:          "https://whitewaternow.com/wp-content/uploads/2019/12/hot-water-pouring-cup.jpg"
 
-Latte_Macchiato:    "https://www.cafemigo.de/wp-content/uploads/AdobeStock-239331032-Pixel-Shot-780x520.jpeg"
 
-Milchschaum:        "https://www.roastmarket.de/magazin/wp-content/uploads/2016/07/milchschaum-in-wei%C3%9Fer-tasse-660x455.jpeg"
+Warme Milch:      "https://cdn-icons-png.flaticon.com/512/1290/1290166.png"
 
-Warme Milch:        "https://amp.infranken.de/storage/image/9/1/0/6/3716019_amp-large_1xksWs_5vR6mm.jpg"
+Milchschaum:      "https://www.illy.com/content/dam/channels/website/consumer/italy/landing/milk-frother/MilkFrother_Icone_625x475px_01.jpg"
+
+Hot_Water:        "https://icons.veryicon.com/png/o/object/homestay-icon/hot-water.png"
+
+Easy Clean:       "https://www.seekpng.com/png/detail/45-452133_png-file-svg-clean-icon.png"
+
+
