@@ -5,7 +5,7 @@ Caffee_Creme:     "https://icons.veryicon.com/png/o/miscellaneous/foods-life/esp
 
 Cappuccino:       "https://cdn-icons-png.flaticon.com/512/468/468641.png"
 
-Latte_Macchiato:  "https://static.thenounproject.com/png/2776526-200.png"
+Latte_Macchiato:  "https://cdn.icon-icons.com/icons2/3345/PNG/128/latte_coffee_drink_cup_glass_icon_210122.png"
 
 
 
